@@ -61,21 +61,7 @@
 	<h1>Get ID bài hát trong mp3.zing.vn</h1>
 	<p><b>Kéo</b> link <b>GET_ID</b> bên dưới vào <b>thanh bookmark</b> của chrome để tạo bookmark</p>
 
-	<a id="GETID" href="javascript:(function(){var script = document.createElement('script');script.innerText = "(function(){
-	console.log('getID starting');
-	try {
-		var p = document.getElementById('zplayerjs-wrapper').attributes[2].textContent;
-		p = p.substring(p.search('key=')+4);
-		window.prompt('Ctrl+C to copy this ID', p);
-	} catch(e){
-		if(window.location.hostname != 'mp3.zing.vn')
-			window.alert('this tool only work at mp3.zing.vn');
-		else
-			window.prompt('ERROR: '+e+'\nCan not get ID\n\nMake sure you are opening a SONG LINK\n'+
-				'Example:', 'https://mp3.zing.vn/bai-hat/Chay-Ngay-Di-Son-Tung-M-TP/ZW9CWE6C.html');
-	}
-})();
-";document.body.appendChild(script);})();">
+	<a id="GETID" href="javascript:(function(){var script = document.createElement('script');script.innerText = `(function(){console.log('getID starting');try {var p = document.getElementById('zplayerjs-wrapper').attributes[2].textContent;p = p.substring(p.search('key=')+4);window.prompt('Ctrl+C to copy this ID', p);} catch(e){if(window.location.hostname != 'mp3.zing.vn')window.alert('this tool only work at mp3.zing.vn');elsewindow.prompt('ERROR: '+e+'\nCan not get ID\n\nMake sure you are opening a SONG LINK\n'+'Example:', 'https://mp3.zing.vn/bai-hat/Chay-Ngay-Di-Son-Tung-M-TP/ZW9CWE6C.html');}})();`;document.body.appendChild(script);})();">
 		GET_ID
 		<span>drag me to bookmark</span>
 	</a>
